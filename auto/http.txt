@@ -1,3 +1,4 @@
+https://pastebin.com/raw/VWS3Js1y
 https://openproxylist.xyz/http.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=http
 https://openproxy.space/list/http
