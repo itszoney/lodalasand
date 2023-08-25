@@ -123,13 +123,11 @@ class Telegram:
         Token Error:  {self.token_error}
         Cookie Error: {self.cookie_error}
             ''')
-         print("Press 'q' to quit.")
-        user_input = input()
-        if user_input.lower() == 'q':
-            self.exit_script()
-            sleep(0.3);system('cls' if name=='nt' else 'clear')
-
-
+            print("Press 'q' to quit.")  # Ensure this line has consistent indentation
+            user_input = input()
+            if user_input.lower() == 'q':
+                self.exit_script()
+            sleep(0.3);system('cls' if name=='nt' else 'clear') 
 class Auto:
     def __init__(self):
         self.proxies = []
