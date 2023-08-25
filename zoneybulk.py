@@ -186,7 +186,7 @@ class Auto:
 parser = ArgumentParser()
 parser.add_argument('-c', '--channel', dest='channel', help='Channel user', type=str, required=True)
 parser.add_argument('-pt', '--posts', dest='posts', help='Comma-separated list of post numbers', type=str, required=True)
-# Rest of the argument parsing remains the same
+parser.add_argument('-m', '--mode', dest='mode', help='Proxy mode', type=str, required=True)
 
 args = parser.parse_args()
 post_numbers = [int(post) for post in args.posts.split(",")]
