@@ -6,6 +6,8 @@ from re import compile
 from os import system, name
 from threading import Thread
 from time import sleep
+import sys
+
 
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
 REGEX = compile(
@@ -28,6 +30,9 @@ class Telegram:
         self.failled_sent = 0
         self.token_error  = 0
         self.proxy_error  = 0
+    def exit_script(self):
+        print("Exiting the script...")
+        sys.exit(0)
 
 
     async def request(self, proxy: str, proxy_type: str):
@@ -118,6 +123,10 @@ class Telegram:
         Token Error:  {self.token_error}
         Cookie Error: {self.cookie_error}
             ''')
+         print("Press 'q' to quit.")
+        user_input = input()
+        if user_input.lower() == 'q':
+            self.exit_script()
             sleep(0.3);system('cls' if name=='nt' else 'clear')
 
 
