@@ -1,3 +1,4 @@
+https://pastebin.com/raw/eG8XGCTk
 https://openproxy.space/list/socks4
 https://openproxylist.xyz/socks4.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4
