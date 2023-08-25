@@ -187,7 +187,8 @@ parser = ArgumentParser()
 parser.add_argument('-c', '--channel', dest='channel', help='Channel user', type=str, required=True)
 parser.add_argument('-pt', '--posts', dest='posts', help='Comma-separated list of post numbers', type=str, required=True)
 parser.add_argument('-m', '--mode', dest='mode', help='Proxy mode', type=str, required=True)
-
+parser.add_argument('-p', '--proxy', dest='proxy', help='Proxy file path or user:password@host:port', type=str, required=False)
+#args = parser.parse_args()
 args = parser.parse_args()
 post_numbers = [int(post) for post in args.posts.split(",")]
 
