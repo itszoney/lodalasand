@@ -1,4 +1,3 @@
-https://pastebin.com/raw/hNPRrvng
 https://openproxy.space/list/socks5
 https://openproxylist.xyz/socks5.txt
 https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5
